@@ -1,2 +1,3 @@
-const connctToMongo = require('./db');
-connctToMongo()
+const connectToMongo = require('./db');
+
+connctToMongo();

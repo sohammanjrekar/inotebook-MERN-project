@@ -1,8 +1,10 @@
 const mongoose = require('mongoose')
-const mongoURI="mongodb://localhost:27017/test";
+const mongoURI="mongodb://localhost:27017";
 
-const connctToMongo= ()=>{
-    mongoose.connect(mongoURI, ()=>{
-        console.log("connect successfully")
-    })
+const connectToMongo= ()=>{
+    mongoose.connect('mongodb://localhost:27017',
+    {
+      useNewUrlParser: true
+    }
+  );
 }
